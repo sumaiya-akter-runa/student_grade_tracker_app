@@ -26,10 +26,22 @@ class SubjectProvider extends ChangeNotifier {
 
   String get overallGrade {
     final avg = averageMark;
-    if (avg >= 70) return 'A';
-    if (avg >= 60) return 'B';
-    if (avg >= 50) return 'C';
-    return 'F';
+
+    if (avg >= 80) {
+      return 'A+';
+    } else if (avg >= 70) {
+      return 'A';
+    } else if (avg >= 60) {
+      return 'A-';
+    } else if (avg >= 50) {
+      return 'B';
+    } else if (avg >= 40) {
+      return 'C';
+    } else if (avg >= 33) {
+      return 'D';
+    } else {
+      return 'F';
+    }
   }
 
   int get passingSubjects => _subjects.where((s) => s.mark >= 50).length;
