@@ -1,29 +1,108 @@
-# Student Grade Tracker
+# Student Grade Tracker App
 
-A Flutter application for managing student subjects and grades.
+## Overview
+
+Student Grade Tracker is a Flutter application that allows students to manage their academic subjects, enter marks, calculate grades automatically, and view an overall performance summary. The application is built using Flutter and Provider for state management, following a clean and organized project structure.
+
+---
 
 ## Features
 
-- Add Subject
-- Enter Marks
-- Automatic Grade Calculation
-- View Summary
-- Dark/Light Theme
+* Add new subjects with marks
+* Automatic grade calculation
+* View a list of all subjects
+* Display result summary
+* Light and Dark theme support
+* Responsive user interface
+* Provider state management
+
+---
+
+## Project Structure
+
+```text
+student_grade_tracker/
+├── pubspec.yaml
+├── README.md
+└── lib/
+    ├── main.dart
+    ├── subject.dart
+    ├── subject_provider.dart
+    ├── theme_provider.dart
+    ├── navigation_provider.dart
+    ├── add_subject_screen.dart
+    ├── subject_list_screen.dart
+    └── summary_screen.dart
+```
+
+---
+
+## Technologies Used
+
+* Flutter
+* Dart
+* Provider
+* Material Design
+
+---
+
+## Grade Calculation
+
+|    Marks | Grade |
+| -------: | :---: |
+| 80 - 100 |   A+  |
+|  70 - 79 |   A   |
+|  60 - 69 |   A-  |
+|  50 - 59 |   B   |
+|  40 - 49 |   C   |
+|  33 - 39 |   D   |
+| Below 33 |   F   |
+
+---
 
 ## How to Run
 
-1. Clone the repository
+### Clone the repository
 
-git clone <repo link>
+```bash
+git clone https://github.com/your-sumaiya-akter-runa/student_grade_tracker.git
+```
 
-2. Open project
+### Navigate to the project directory
 
+```bash
 cd student_grade_tracker
+```
 
-3. Install packages
+### Install dependencies
 
+```bash
 flutter pub get
+```
 
-4. Run
+### Run the application
 
+```bash
 flutter run
+```
+
+---
+
+## Screens
+
+* Subject List Screen
+* Add Subject Screen
+* Result Summary Screen
+
+---
+
+## Future Improvements
+
+* Edit subject information
+* Delete subjects
+* Store data using Hive or SQLite
+* Search and filter subjects
+* Export result as PDF
+* Cloud synchronization
+
+
